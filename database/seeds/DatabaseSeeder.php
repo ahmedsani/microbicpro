@@ -2,6 +2,7 @@
 
 use App\AntiBiogramDataBiotic;
 use App\Pathogen;
+use App\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -25,6 +26,13 @@ class DatabaseSeeder extends Seeder
         Pathogen::create([
             'description' => 'pathogen',
             'epidemiology' => 'test',
+        ]);
+
+        User::create([
+            'first_name' => 'Abubakar',
+            'last_name' => 'Lawal',
+            'email' => 'abula3003@gmail.com',
+            'password' => 'abula112',
         ]);
 
     }
