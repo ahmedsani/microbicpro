@@ -36,6 +36,3 @@ Route::resources([
 
 Route::get('test', 'Controller@test');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', function (){
-    returnview(/auth/login);
-
