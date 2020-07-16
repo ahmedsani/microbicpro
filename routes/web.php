@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::resources([
     'anti_biogram_data_biotics' => 'AntiBiogramDataBioticController',

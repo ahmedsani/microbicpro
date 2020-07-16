@@ -1,6 +1,6 @@
 @extends('auth.layout')
 @section('content')
-<form action="{{ route('login') }}" class="form-signin">
+<form action="{{ route('login') }}" class="form-signin" method="POST">
     @csrf
     <div class="account-logo">
         <a href="#"><img src="{{asset('img/logo-dark.png')}}" alt=""></a>
@@ -9,7 +9,7 @@
     <div class="form-group">
         <label>{{ __('E-Mail Address') }}</label>
         <input id="email" type="email" autofocus="" class="form-control @error('email') is-invalid @enderror" required
-            autocomplete="">
+            autocomplete="" name="email">
         @error('email')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
