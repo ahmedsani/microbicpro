@@ -14,7 +14,7 @@ class PathogenController extends Controller
      */
     public function index()
     {
-        //
+        return view('pathogen.index');
     }
 
     /**

@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-class adminController extends Controller
+class AdminController extends Controller
 {
-public function viewadmin(){
-
-	return view ('/admin/home');
-}
-
-
+    public function index()
+    {
+        return view('admin.home');
+    }
 }
